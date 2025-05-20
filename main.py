@@ -3,6 +3,8 @@ from fake_useragent import FakeUserAgent
 from datetime import datetime
 from colorama import *
 import asyncio, json, os, pytz
+from pyfiglet import Figlet
+import shutil
 
 wib = pytz.timezone('Asia/Jakarta')
 
