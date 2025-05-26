@@ -321,7 +321,7 @@ class NaorisProtocol:
             self.access_tokens[address] = token["token"]
             self.refresh_tokens[address] = token["refreshToken"]
 
-            self.print_message(address, proxy, Fore.GREEN, "Generate Token Success")
+            self.print_message(address, proxy, Fore.GREEN, "Generate Token Success.")
 
             return self.access_tokens[address], self.refresh_tokens[address]
 
