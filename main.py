@@ -348,7 +348,7 @@ class NaorisProtocol:
 
         whitelist = await self.add_whitelist(address, proxy)
         if whitelist and whitelist.get("message") == "url saved successfully":
-            self.print_message(address, proxy, Fore.GREEN, "Add to Whitelist Success")
+            self.print_message(address, proxy, Fore.GREEN, "Add to Whitelist Success.")
 
         return True
 
