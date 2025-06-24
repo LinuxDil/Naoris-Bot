@@ -38,16 +38,16 @@ class NaorisProtocol:
             flush=True
         )
 
-   def welcome(self):
-       figlet = Figlet(font='slant')  # Bisa juga: 'standard', 'big', 'banner3-D', dll
-       banner = figlet.renderText("Naoris Bot")
+    def welcome(self):
+        figlet = Figlet(font='ansi shadow')  # Ganti font di sini
+        banner = figlet.renderText("Naoris Bot")
 
-       terminal_width = shutil.get_terminal_size().columns
-       centered_banner = "\n".join(line.center(terminal_width) for line in banner.splitlines())
+        terminal_width = shutil.get_terminal_size().columns
+        centered_banner = "\n".join(line.center(terminal_width) for line in banner.splitlines())
 
-       print(Fore.CYAN + Style.BRIGHT + centered_banner)
-       print(Fore.GREEN + Style.BRIGHT + "Auto Ping Naoris by Bg WIN".center(terminal_width))
-      )
+        print(Fore.CYAN + Style.BRIGHT + centered_banner)
+        print(Fore.GREEN + Style.BRIGHT + "Auto Ping Naoris by Bg WIN".center(terminal_width))
+
 
     def format_seconds(self, seconds):
         hours, remainder = divmod(seconds, 3600)
