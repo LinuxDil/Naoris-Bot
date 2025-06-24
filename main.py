@@ -39,7 +39,7 @@ class NaorisProtocol:
         )
 
     def welcome(self):
-        figlet = Figlet(font='block')  # Ganti font di sini
+        figlet = Figlet(font='slant')  # Ganti font di sini
         banner = figlet.renderText("Naoris Bot")
 
         terminal_width = shutil.get_terminal_size().columns
